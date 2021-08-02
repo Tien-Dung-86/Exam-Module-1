@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr, x) {
+        let arrayNew = new Array();
+        for (let i = 0; i <= arr.length; i++) {
+            if (x !== arr[i]) {
+                arrayNew.push(arr[i]);
+            }
+        }
+        return arrayNew
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6]
+    let inputNumber = +prompt("Input Number: ");
+    let removeFromArray = tryRemoveFromArray(arr, inputNumber)
+        alert(" Array arr = " + removeFromArray);
+
+</script>
+</body>
+</html>

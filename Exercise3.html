@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(number) {
+        let a = 1;
+        let b = 0;
+        let c;
+        let check = true;
+        for (let i = 0; i < number; i++) {
+            c = a;
+            a = a + b;
+            b = c;
+            if (a === number) {
+                return true
+            }
+        }
+        return false
+    }
+
+    let number = +prompt("Input number");
+    alert(isFibonacci(number));
+</script>
+</body>
+</html>
